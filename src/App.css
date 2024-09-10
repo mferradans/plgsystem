@@ -1,0 +1,405 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.home-container {
+  padding: 20px;
+}
+
+/* Aplicar esquinas redondeadas a los rectángulos */
+.rounded {
+  border-radius: 10px; /* Esquinas levemente redondeadas */
+}
+
+.hero-section {
+  background-color: #933235;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2em;
+}
+
+.hero-section .contact-button {
+  background-color: white;
+  color: #933235;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 10px; /* Botón redondeado */
+}
+
+.hero-section .contact-button:hover {
+  background-color: #a3a2a1;
+}
+
+/* Sección de Cursos */
+/* From Uiverse.io by gharsh11032000 */ 
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 280px;
+  padding: 2px;
+  border-radius: 10px;
+  overflow: hidden;
+  line-height: 1.6;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  margin:40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  padding: 34px;
+  width: 500px;
+  height: 280px;
+  border-radius: 10px;
+  color: #ffffff;
+  overflow: hidden;
+  background: #ffffff;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  text-decoration: none;
+
+}
+
+.content .heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3;
+  color:#ffffff;
+  z-index: 1;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content .para {
+  z-index: 1;
+  opacity: 0.8;
+  font-size: 18px;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  height: 220%;
+  width: 220%;
+  border-radius: inherit;
+  background: #933235;
+  background: linear-gradient(to right, #933235, #933235);
+  transform-origin: center;
+  animation: moving 4.8s linear infinite paused;
+  transition: all 0.88s cubic-bezier(0.23, 1, 0.32, 1);
+  pointer-events: none;
+}
+
+.card:hover::before {
+  animation-play-state: running;
+  z-index: -1;
+  width: 20%;
+}
+
+.card:hover .content .heading,
+.card:hover .content .para {
+  color: #000000;
+}
+
+.card:hover {
+  box-shadow: 0rem 6px 13px rgba(255, 10, 10, 0.1),
+    0rem 24px 24px rgba(255, 10, 10, 0.09),
+    0rem 55px 33px rgba(255, 10, 10, 0.05),
+    0rem 97px 39px rgba(255, 10, 10, 0.01), 0rem 152px 43px rgba(255, 10, 10, 0);
+  scale: 1.05;
+  color: #000000;
+}
+/* Alinear las tarjetas una al lado de la otra */
+.courses-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px; /* Espacio entre las tarjetas */
+}
+
+a {
+  text-decoration: none; /* Quitar el subrayado de los enlaces */
+  display: block; /* Asegura que el enlace abarque solo el área visible de la tarjeta */
+
+
+}
+
+@keyframes moving {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+/* Franja de Trayectoria */
+.milestones-section {
+  background-color: #933235;
+  color: white;
+  padding: 60px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px; /* Esquinas redondeadas */
+}
+
+.milestone {
+  text-align: center;
+}
+
+.milestone h2 {
+  font-size: 3em;
+  color: white;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* Sección de Testimonios */
+.testimonials-section {
+  padding: 20px 10px;
+  background-color: #dfdfdf;
+  text-align: center;
+}
+
+
+.testimonials-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.testimonial {
+  background-color: white;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Esquinas redondeadas */
+  width: 30%;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #666;
+}
+
+
+
+
+
+/* Asegurarse de que la imagen del carrusel se mantenga en su lugar */
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Ajustar las flechas para que estén dentro de la imagen */
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%; /* Centra las flechas verticalmente sobre la imagen */
+  transform: translateY(-50%); /* Mantiene las flechas centradas verticalmente */
+  width: 50px;
+  height: 50px;
+  color: #933235; /* Color personalizado */
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  border-radius: 50%; /* Botones circulares */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.carousel-control-prev {
+  left: 10px; /* Flecha a la izquierda, pero dentro de la imagen */
+}
+
+.carousel-control-next {
+  right: 10px; /* Flecha a la derecha, pero dentro de la imagen */
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color: #933235; /* Color sólido al pasar el mouse */
+  color: white;
+}
+
+
+
+
+/* Estilos para el logo del navbar con esquinas levemente redondeadas */
+.logo {
+  border-radius: 5px; /* Esquinas levemente redondeadas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave por debajo del logo */
+  transition: transform 0.3s ease; /* Animación suave al hacer hover */
+}
+
+.logo:hover {
+  transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el mouse */
+}
+
+
+
+/* From Uiverse.io by SalladShooter */ 
+.button {
+  cursor: pointer;
+  margin-top: 25px;
+  font-size: 18px;
+  width: 250px;
+  aspect-ratio: 1/0.25;
+  color: white;
+  background: #555555;
+  background-size: cover;
+  background-blend-mode: overlay;
+  border-radius: 0.5em;
+  border: 0;
+  box-shadow: 0 0 0.6em 0.2em rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+    /* Nuevas propiedades */
+    display: flex; /* Alinea los elementos dentro del botón en fila */
+    align-items: center; /* Centra verticalmente el icono y el texto */
+    justify-content: center; /* Centra horizontalmente el icono y el texto */
+    gap: 1px; /* Espacio entre el icono y el texto */
+    padding: 1px;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 1 4em 0.15em rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, #933235, #7e2c2e);
+  outline: 0;
+}
+
+.icon {
+  fill: white;
+  width: 1em;
+  aspect-ratio: 1;
+  top: 0;
+  left: 0;
+  margin: 0;
+  transform: translate(-35%, 10%);
+  
+}
+
+
+
+
+
+
+
+.slider {
+  position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 242, 242, 0.3);
+  outline: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container2 {
+  position: relative;
+  width: 200px;
+  height: 900px;
+  margin: 0 auto;
+  border: 2px solid white;
+  overflow: hidden; /* Mantiene las imágenes dentro del contenedor */
+}
+
+.img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider-button {
+  pointer-events: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
