@@ -14,14 +14,14 @@ const CursoReparacionCristales = () => {
 
 
 <div className="relative mb-6 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:mb-8">
-  <img src="/fotos/cristales/cristales1.jpg" loading="lazy"  className="h-full w-full object-cover object-center" />
+  <img src="/fotos/cristales/cristales1.jpg" alt="Foto cristales 1" loading="lazy"  className="h-full w-full object-cover object-center" />
 </div>   
 <div className="grid grid-cols-2 gap-4">
   <div className="relative overflow-hidden rounded-lg bg-gray-100 shadow-lg">
-    <img src="/fotos/cristales/cristales3.jpg" loading="lazy"  className="h-full w-full object-cover object-center" />
+    <img src="/fotos/cristales/cristales3.jpg" alt="Foto cristales 2" loading="lazy"  className="h-full w-full object-cover object-center" />
   </div>
   <div className="relative overflow-hidden rounded-lg bg-gray-100 shadow-lg">
-    <img src="/fotos/cristales/cristales4.jpg" loading="lazy" className="h-full w-full object-cover object-center" />
+    <img src="/fotos/cristales/cristales4.jpg" alt="Foto cristales 3" loading="lazy" className="h-full w-full object-cover object-center" />
   </div>
 </div>
 
@@ -30,7 +30,7 @@ const CursoReparacionCristales = () => {
         <h2 className="mb-2 mt-4 text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4">Antes y después de la reparación de cristales</h2>
 
         <div className="relative mb-6 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:mb-8">
-          <img src="/fotos/cristales/cristales-antes-despues.jpg" loading="lazy" className="h-full w-full object-cover object-center" />
+          <img src="/fotos/cristales/cristales-antes-despues.jpg" alt="Foto cristales antes y despues" loading="lazy" className="h-full w-full object-cover object-center" />
         </div>
 
         <h2 className="mb-2 mt-4 text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4">Alumnos poniendo en práctica</h2>
@@ -42,21 +42,21 @@ const CursoReparacionCristales = () => {
 <div className="mx-auto max-w-screen-lg px-4 md:px-8 grid grid-cols-2 gap-4">
 
   <div className="relative overflow-hidden rounded-lg bg-gray-100 shadow-lg">
-    <img src="/fotos/cristales/edwin1.jpg" loading="lazy" alt="Cristales 1" className="h-full w-full object-cover object-center" />
+    <img src="/fotos/cristales/edwin1.jpg" alt="Foto cristales edwin 1" loading="lazy"  className="h-full w-full object-cover object-center" />
   </div>
 
 
   <div className="relative  overflow-hidden rounded-lg bg-gray-100 shadow-lg">
-    <img src="/fotos/cristales/edwin2.jpg" loading="lazy" alt="Cristales 2" className="h-full w-full object-cover object-center" />
+    <img src="/fotos/cristales/edwin2.jpg" alt="Foto cristales edwin 2" loading="lazy"  className="h-full w-full object-cover object-center" />
   </div>
 
 
   <div className="relative overflow-hidden rounded-lg bg-gray-100 shadow-lg">
-    <img src="/fotos/cristales/luis1.jpg" loading="lazy" alt="Cristales 3" className="h-full w-full object-cover object-center" />
+    <img src="/fotos/cristales/luis1.jpg" alt="Foto cristales luis 1" loading="lazy"  className="h-full w-full object-cover object-center" />
   </div>
 
   <div className="relative overflow-hidden rounded-lg bg-gray-100 shadow-lg">
-    <img src="/fotos/cristales/luis2.jpg" loading="lazy" alt="Cristales 4" className="h-full w-full object-cover object-center" />
+    <img src="/fotos/cristales/luis2.jpg" alt="Foto cristales luis 2" loading="lazy"  className="h-full w-full object-cover object-center" />
   </div>
 </div>
 

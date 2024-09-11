@@ -12,7 +12,7 @@ const CursoSacabollos = () => {
         Para esto se utilizan herramientas especiales y se aplica mano de obra artesanal en el proceso de reparación.
         </p>
         <div className="relative mb-6 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:mb-8">
-          <img src="/fotos/sacab/plgcurso1.jpg" loading="lazy" className="h-full w-full object-cover object-center" />
+          <img src="/fotos/sacab/plgcurso1.jpg" alt="Foto curso 1" loading="lazy" className="h-full w-full object-cover object-center" />
         </div>
         <h2 className="mb-2 text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4">Ventajas de este tipo de reparación</h2>
 
@@ -29,7 +29,7 @@ const CursoSacabollos = () => {
         </p>
 
         <div className="relative mb-6 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:mb-8">
-          <img src="/fotos/sacab/plgcurso2.jpg" loading="lazy" className="h-full w-full object-cover object-center" />
+          <img src="/fotos/sacab/plgcurso2.jpg" alt="Foto curso 2" loading="lazy" className="h-full w-full object-cover object-center" />
         </div>
 
 
@@ -63,7 +63,7 @@ Conocer los nuevos instrumentos de trabajo que podemos usar y que nos permiten r
           <li>Acabado final de las reparaciones.</li>
         </ul>
         <div className="relative mb-6 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:mb-8">
-          <img src="/fotos/sacab/plgcurso3.jpg" loading="lazy" className="h-full w-full object-cover object-center" />
+          <img src="/fotos/sacab/plgcurso3.jpg" alt="Foto curso 3" loading="lazy" className="h-full w-full object-cover object-center" />
         </div>
 
 
@@ -96,7 +96,7 @@ Siempre bajo la supervisión y ayuda de nuestros capacitadores.
         <p className="mb-6 text-justify  text-gray-500 sm:text-lg md:mb-8">PLG SYSTEM diseña y produce sus propias herramientas, creando constantemente nuevos elementos, para facilitar aun más la calidad final del acabado, dichas herramientas exclusivas son provistas a cada alumno, junto a la capacitación y el apoyo técnico.</p>
       
         <div className="relative mb-6 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:mb-8">
-          <img src="/fotos/sacab/plgcurso4.jpg" loading="lazy" className="h-full w-full object-cover object-center" />
+          <img src="/fotos/sacab/plgcurso4.jpg" alt="Foto curso 4" loading="lazy" className="h-full w-full object-cover object-center" />
         </div>
         <h3 className="mb-2 text-lg font-semibold text-gray-600 sm:text-xl md:mb-4">Comuníquese con nosotros para obtener más información.</h3>
         <ul className="mb-6 list-inside list-disc text-gray-500 sm:text-lg md:mb-8">
