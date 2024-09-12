@@ -21,76 +21,88 @@ const Metas = () => {
       </ul>
 
       {/* Contenedor del antes y después */}
-      <div className="container2 rounded" style={{ position: "relative", width: "500px", height: "651px", margin: "0 auto", border: "2px solid white", overflow: "hidden" }}>
-        
-        {/* Imagen de fondo (Antes) */}
-        <div
-          className="img2 background-img"
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundImage: `url(/fotos/metas/nissanantes.jpg)`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        ></div>
+<div
+  className="container2 rounded"
+  style={{
+    position: "relative",
+    width: "100%", // Ajuste para pantallas móviles
+    maxWidth: "500px", // Máximo ancho para pantallas grandes
+    height: "auto", // Altura automática basada en el ancho
+    aspectRatio: "1 / 1.3", // Mantén la proporción
+    margin: "0 auto",
+    border: "2px solid white",
+    overflow: "hidden",
+  }}
+>
+  {/* Imagen de fondo (Antes) */}
+  <div
+    className="img2 background-img"
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundImage: `url(/fotos/metas/nissanantes.jpg)`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+  ></div>
 
-        {/* Imagen de primer plano (Después) */}
-        <div
-          className="img2 foreground-img"
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundImage: `url(/fotos/metas/nissandespues.jpg)`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            clipPath: `inset(0 0 0 ${sliderValue}%)` // Recorta la imagen desde la izquierda
-          }}
-        ></div>
+  {/* Imagen de primer plano (Después) */}
+  <div
+    className="img2 foreground-img"
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundImage: `url(/fotos/metas/nissandespues.jpg)`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      clipPath: `inset(0 0 0 ${sliderValue}%)`, // Recorta la imagen desde la izquierda
+    }}
+  ></div>
 
-        {/* Control deslizante */}
-        <input
-          type="range"
-          min="1"
-          max="100"
-          value={sliderValue}
-          className="slider"
-          onChange={handleSliderChange}
-          style={{
-            position: "absolute",
-            width: "100%",
-            top: 0,
-            left: 0,
-            height: "100%",
-            zIndex: 10,
-            opacity: 0,
-          }}
-        />
+  {/* Control deslizante */}
+  <input
+    type="range"
+    min="1"
+    max="100"
+    value={sliderValue}
+    className="slider"
+    onChange={handleSliderChange}
+    style={{
+      position: "absolute",
+      width: "100%",
+      top: 0,
+      left: 0,
+      height: "100%",
+      zIndex: 10,
+      opacity: 0,
+    }}
+  />
 
-        {/* Botón deslizante */}
-        <div
-          className="slider-button"
-          style={{
-            pointerEvents: "none",
-            position: "absolute",
-            width: "30px",
-            height: "30px",
-            borderRadius: "50%",
-            backgroundColor: "white",
-            left: `calc(${sliderValue}% - 15px)`,
-            top: "50%",
-            transform: "translateY(-50%)",
-            zIndex: 20,
-          }}
-        ></div>
-      </div>
-      <p className="mb-6 text-justify  text-gray-500 sm:text-lg md:mb-8">
+  {/* Botón deslizante */}
+  <div
+    className="slider-button"
+    style={{
+      pointerEvents: "none",
+      position: "absolute",
+      width: "30px",
+      height: "30px",
+      borderRadius: "50%",
+      backgroundColor: "white",
+      left: `calc(${sliderValue}% - 15px)`,
+      top: "50%",
+      transform: "translateY(-50%)",
+      zIndex: 20,
+    }}
+  ></div>
+</div>
+
+      <p className="mb-6 mt-6 text-justify  text-gray-500 sm:text-lg md:mb-8">
       Para la reparación de pequeñas y medianas abolladuras en la carrocería, sin la eliminación de la capa de la pintura, generalmente causadas por granizo, actos de vandalismo, maniobras de aparcamiento, etc.<br /><br />
       A tal propósito <strong>PLG SYSTEM</strong>, le permite eliminar todas las imperfecciones citadas previamente sin recurrir a la pintura, manteniendo de esta forma la pintura original, y en tiempos muy breves. </p>
       <h2 className="mb-2 text-lg font-semibold text-rojoPlg sm:text-xl md:mb-4">TIEMPOS DE INTERVENCIÓN MUY REDUCIDOS</h2>

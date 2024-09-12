@@ -16,11 +16,11 @@ const Home = () => {
 
       <div class="mb-12 flex w-full md:mb-16 lg:w-2/3">
         <div class="relative left-12 top-12 z-10 -ml-12 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:left-16 md:top-16 lg:ml-0">
-          <img src="/fotos/argentina/arg001.jpg" loading="lazy" alt="Curso en Argentina" class="h-full w-full object-cover object-center" />
+          <img src="/fotos/espana/Tarragona_21.jpg" loading="lazy" alt="Curso en Argentina" class="h-full w-full object-cover object-center" />
         </div>
 
         <div class="overflow-hidden rounded-lg bg-gray-100 shadow-lg">
-          <img src="/fotos/espana/Tarragona_21.jpg" loading="lazy" alt="Curso en España" class="h-full w-full object-cover object-center" />
+          <img src="/fotos/espana/Tarragona_19.jpg" loading="lazy" alt="Curso en España" class="h-full w-full object-cover object-center" />
         </div>
       </div>
     </div>
@@ -28,44 +28,53 @@ const Home = () => {
 
 
   {/* Sección de Tipos de Cursos */}
-  <section className="courses-section mt-6 bg-grisPlg rounded lg:py-6" >
-        <h2 className="mb-2 pt-4 text-center text-2xl font-bold text-gray-800 lg:text-3xl">Nuestros Cursos</h2>
-        <div className="courses-grid mx-auto max-w-screen-xl px-4 md:px-8">
-          <Link to="/cursos/sacabollos">
-            <div className="card">
-              <div className="content">
-                <h3 className="heading">Curso de Sacabollos</h3>
-                <p className="para">Aprende a reparar carrocerías sin pintura.</p>
-              </div>
-            </div>
-          </Link>
-          <Link to="/cursos/reparacion-cristales">
-            <div className="card">
-              <div className="content">
-                <h3 className="heading">Curso de Reparación de Cristales</h3>
-                <p className="para">Domina las técnicas para reparar y sustituir cristales de vehículos.</p>
-              </div>
-            </div>
-          </Link>
+  <section className="courses-section mt-6 bg-grisPlg rounded lg:py-6">
+  <h2 className="mb-2 pt-4 text-center text-2xl font-bold text-gray-800 lg:text-3xl">
+    Nuestros Cursos
+  </h2>
+  <div className="courses-grid mx-auto max-w-screen-xl px-4 md:px-8 flex flex-wrap justify-center gap-4">
+    <Link to="/cursos/sacabollos">
+      <div className="card w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+        <div className="content w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+          <h3 className="heading">Curso de Sacabollos</h3>
+          <p className="para">Aprende a reparar carrocerías sin pintura.</p>
         </div>
-      </section>
+      </div>
+    </Link>
+    <Link to="/cursos/reparacion-cristales">
+      <div className="card w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+        <div className="content w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+          <h3 className="heading">Curso de Reparación de Cristales</h3>
+          <p className="para">Domina las técnicas para reparar y sustituir cristales de vehículos.</p>
+        </div>
+      </div>
+    </Link>
+  </div>
+</section>
+
 
 
       {/* Franja con trayectoria y clientes */}
-      <section className="milestones-section rounded mt-6">
-        <div className="milestone">
-          <h2>10+</h2>
-          <p>Años de Experiencia</p>
-        </div>
-        <div className="milestone">
-          <h2>500+</h2>
-          <p>Clientes Satisfechos</p>
-        </div>
-        <div className="milestone">
-          <h2>5</h2>
-          <p>Países donde dictamos cursos</p>
-        </div>
-      </section>
+      <section className="trayectoria-section mt-6 bg-rojoPlg rounded py-6">
+  <div className="mx-auto max-w-screen-xl px-4 md:px-8">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+      <div className="w-full">
+        <h3 className="text-2xl font-bold text-white">+50 años</h3>
+        <p className="text-gray-200">Trayectoria</p>
+      </div>
+      <div className="w-full">
+        <h3 className="text-2xl font-bold text-white">+1000 clientes</h3>
+        <p className="text-gray-200">Clientes Satisfechos</p>
+      </div>
+      <div className="w-full">
+        <h3 className="text-2xl font-bold text-white">+5 países</h3>
+        <p className="text-gray-200">Presencia Internacional</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
 

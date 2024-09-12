@@ -20,7 +20,7 @@ const Contact = () => {
           {/* Teléfono */}
           <div className="flex items-center text-gray-700">
             <i className="fas fa-phone-alt text-3xl mr-3 text-rojoPlg"></i> {/* Ícono de teléfono */}
-            <span>+1258 3258 5679</span>
+            <span>+54 9 3534229297</span>
           </div>
 
           {/* Correo - Usa mailto para abrir el cliente de correo */}
@@ -29,12 +29,6 @@ const Contact = () => {
             <a href="mailto:info@plgsystems.com" className="text-gray-700 hover:text-gray-900">
             info@plgsystems.com
             </a>
-          </div>
-
-          {/* Dirección */}
-          <div className="flex items-center text-gray-700">
-            <i className="fas fa-map-marker-alt text-3xl mr-3 text-rojoPlg"></i> {/* Ícono de ubicación */}
-            <span>102 street, y cross 485656</span>
           </div>
 
           {/* WhatsApp - Abre el chat de WhatsApp */}
@@ -49,10 +43,11 @@ const Contact = () => {
               Chat en WhatsApp
             </a>
           </div>
-
+ 
           {/* Instagram */}
+          {/* 
           <div className="flex items-center text-gray-700">
-            <i className="fab fa-instagram text-3xl mr-3 text-rojoPlg"></i> {/* Ícono de Instagram */}
+            <i className="fab fa-instagram text-3xl mr-3 text-rojoPlg"></i>
             <a
               href="https://instagram.com" // Enlace de Instagram
               target="_blank"
@@ -62,7 +57,7 @@ const Contact = () => {
               Instagram
             </a>
           </div>
-
+          */}
         </div>
       </div>
     </div>
