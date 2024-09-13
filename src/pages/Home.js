@@ -37,7 +37,7 @@ const Home = () => {
       <div className="card w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
         <div className="content w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
           <h3 className="heading">Curso de Sacabollos</h3>
-          <p className="para">Aprende a reparar carrocerías sin pintura.</p>
+          <p className="para">Aprende a reparar abolladuras en la carrocería <strong>sin dañar la pintura</strong>.</p>
         </div>
       </div>
     </Link>
@@ -45,7 +45,7 @@ const Home = () => {
       <div className="card w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
         <div className="content w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
           <h3 className="heading">Curso de Reparación de Cristales</h3>
-          <p className="para">Domina las técnicas para reparar y sustituir cristales de vehículos.</p>
+          <p className="para">Domina las técnicas para reparar las roturas en cristales sin necesidad de cambiarlos.</p>
         </div>
       </div>
     </Link>
@@ -59,7 +59,7 @@ const Home = () => {
   <div className="mx-auto max-w-screen-xl px-4 md:px-8">
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
       <div className="w-full">
-        <h3 className="text-2xl font-bold text-white">+50 años</h3>
+        <h3 className="text-2xl font-bold text-white">53 años</h3>
         <p className="text-gray-200">Trayectoria</p>
       </div>
       <div className="w-full">
@@ -79,55 +79,51 @@ const Home = () => {
 
 
 
-      {/* Sección de Testimonios */}
-      <section className="testimonials-section rounded mt-6">
-      <div className="mx-auto max-w-screen-xl px-4 md:px-8">
-    <h2 className="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl">Lo que las personas dicen</h2>
+
+{/* Sección de Testimonios */}
+<section className="testimonials-section rounded mt-6">
+  <div className="mx-auto max-w-screen-xl px-4 md:px-8">
+    {/* Video testimonial de YouTube */}
+    <h3 className="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl">Testimonios de nuestros alumnos</h3>
+    <div className="responsive-video mx-auto mb-8" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '100%', background: '#000', borderRadius: '15px', boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)' }}>
+      <iframe
+        src="https://www.youtube.com/embed/Y-a9c04ewPM"
+        title="Testimonios en video"
+        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', borderRadius: '15px' }}
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
 
     <div className="grid gap-4 md:grid-cols-2 md:gap-8">
-      <div className="flex flex-col items-center gap-4 rounded-lg bg-grisOPlg px-8 py-6 md:gap-6">
-        <div className="max-w-md text-center text-white lg:text-lg">“Este curso ha superado mis expectativas. Nunca pensé que podría reparar bollos con tanta facilidad y precisión. Ahora tengo mi propio taller y mis clientes están encantados con los resultados. ¡Totalmente recomendable!”</div>
-
-        <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
+      <div className="flex flex-col items-center gap-4 rounded-lg bg-grisOPlg px-6 py-4 md:gap-4">
+        <div className="max-w-md text-center text-white lg:text-base">
+          “Este curso ha superado mis expectativas. Nunca pensé que podría reparar bollos con tanta facilidad y precisión. Ahora tengo mi propio taller y mis clientes están encantados con los resultados. ¡Totalmente recomendable!”
+        </div>
+        <div className="flex flex-col items-center gap-2">
           <div>
-            <div className="text-center text-sm font-bold text-indigo-50 sm:text-left md:text-base">Paco Fernández</div>
-            <p className="text-center text-sm text-indigo-200 sm:text-left md:text-sm">Alumno de España</p>
+            <div className="text-center text-sm font-bold text-indigo-50 md:text-base">Paco Fernández</div>
+            <p className="text-center text-xs text-indigo-200 md:text-sm">Alumno de España</p>
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-4 rounded-lg bg-grisOPlg px-8 py-6 md:gap-6">
-        <div className="max-w-md text-center text-white lg:text-lg">“Gracias al curso de Sacabollos pude aprender técnicas que no conocía y mejorar en mi trabajo. Me encantó lo práctico y directo que fue todo, ya estoy aplicando lo aprendido en mi taller y mis clientes lo notan.”</div>
 
-        <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
+      <div className="flex flex-col items-center gap-4 rounded-lg bg-grisOPlg px-6 py-4 md:gap-4">
+        <div className="max-w-md text-center text-white lg:text-base">
+          “Gracias al curso de Sacabollos pude aprender técnicas que no conocía y mejorar en mi trabajo. Me encantó lo práctico y directo que fue todo, ya estoy aplicando lo aprendido en mi taller y mis clientes lo notan.”
+        </div>
+        <div className="flex flex-col items-center gap-2">
           <div>
-            <div className="text-center text-sm font-bold text-indigo-50 sm:text-left md:text-base">Hector Giménez</div>
-            <p className="text-center text-sm text-indigo-200 sm:text-left md:text-sm">Alumno de Argentina</p>
+            <div className="text-center text-sm font-bold text-indigo-50 md:text-base">Hector Giménez</div>
+            <p className="text-center text-xs text-indigo-200 md:text-sm">Alumno de Argentina</p>
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-4 rounded-lg bg-grisOPlg px-8 py-6 md:gap-6">
-        <div className="max-w-md text-center text-white lg:text-lg">“¡Excelente! El curso de reparación de cristales me dio herramientas que nunca había usado antes. Ahora puedo ofrecer un servicio más completo en mi taller, y eso me ha ayudado a atraer más clientes. Muy recomendable.”</div>
+    </div>
+  </div>
+</section>
 
-        <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-          <div>
-            <div className="text-center text-sm font-bold text-indigo-50 sm:text-left md:text-base">Augusto Gutierrez</div>
-            <p className="text-center text-sm text-indigo-200 sm:text-left md:text-sm">Alumno de Argentina</p>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col items-center gap-4 rounded-lg bg-grisOPlg px-8 py-6 md:gap-6">
-        <div className="max-w-md text-center text-white lg:text-lg">“El curso fue increíble, muy claro y fácil de seguir. Aprendí a reparar cristales de vehículos como un profesional y eso ha mejorado mi negocio. Agradecido con todo el equipo por su apoyo.”</div>
-
-        <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-          <div>
-            <div className="text-center text-sm font-bold text-indigo-50 sm:text-left md:text-base">Miguel Campos</div>
-            <p className="text-center text-sm text-indigo-200 sm:text-left md:text-sm">Alumno de México</p>
-          </div>
-        </div>
-      </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

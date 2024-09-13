@@ -4,7 +4,7 @@ const CursoSacabollos = () => {
   return (
     <div className="bg-white py-6 sm:py-8 lg:py-12">
       <div className="mx-auto max-w-screen-lg px-4 md:px-8">
-        <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6">Cursos Sacabollos o DSP (Desabollado Sin Pintar)</h1>
+        <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6">Curso profesional de PDR Varillaje Sacabollos</h1>
 
         <p className="mb-6 text-justify  text-gray-500 sm:text-lg md:mb-8">
         Capacitación y entrenamiento de técnicas de reparación de vehículos afectados por golpes de GRANIZO O ABOLLADURAS MENORES SIN DAÑAR LA PINTURA.<br /><br />
